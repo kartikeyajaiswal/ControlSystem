@@ -1,0 +1,91 @@
+ 
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\title{Control Systems}
+\author{  }
+\date{April 2020}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\section{Gain Margin}
+
+1. The figure below shows the Bode magnitude and phase plots of a stable transfer function:
+\begin{equation}  
+            G(s) = \frac{n_0}{s^3 + d_2 s^2 + d_1 s + d}
+\end{equation}
+ 
+\includegraphics[scale = 0.25]{q42.png}
+\includegraphics[scale = 0.4]{q42 (1).png}
+ Consider the negative unity feedback configuration with gain $k$ in the feed forward path. The closed loop is stable for  . 
+    The maximum value of $k_o$  is:
+
+
+\noindent \textbf{ Solution:}
+    \begin{itemize}
+        \item For a stable system, Gain margin at the phase cross-over frequency \textgreater \ 0dB.
+        \item The phase crossover frequency is the frequency at which the phase angle first reaches -180\degree.
+        \item  The gain margin refers to the amount of gain, which can be increased or decreased without making the system unstable.
+        \item Gain margin is the factor by which the gain must be multiplied at the phase crossover to have the value 1.
+        \item The phase crossover frequency is the frequency at which the phase angle first reaches -180\degree and thus is the point where the Nyquist plot crosses the real axis.
+    \end{itemize}
+
+\noindent The gain margin is defined as
+\begin{equation}
+    K_g = \frac{1}{|G(j\omega)|}
+\end{equation} 
+at the frequency at which phase angle
+is -180\degree.
+\\\\ 
+In terms of decibels: 
+ \begin{equation}
+    K_g dB = -20log(|G(j\omega)|) dB
+\end{equation}
+
+\includegraphics[scale = 0.52]{1.png}
+Fig: nyquist plot of stable transfer function \\
+
+\includegraphics[scale = 0.52]{2.png} 
+ \\ Fig: nyquist plot of unstable transfer function
+\\
+\\ For a stable system, Gain margin at the phase \ \ cross-over frequency \textgreater \ 1.
+\\
+\\ G(s) is cascaded with k, so,
+\begin{equation}
+        G_1(s) = kG(s) \\
+\end{equation}
+\begin{equation}
+        K_g = \frac{1}{|G_1(j\omega_p_c)|} \textgreater 1\\
+\end{equation}
+\begin{equation}
+       \implies K_g_(_d_B_) = -20log(|G_1(j\omega_p_c)|) \textgreater \ 0dB
+\end{equation}
+
+\begin{equation}
+    \implies  -20log(|G(j\omega_p_c)k|) \textgreater \ 0dB
+\end{equation}
+
+\begin{equation}
+    \implies  -20 - 20log(|k|) \textgreater \ 0dB
+\end{equation}
+
+\begin{equation}
+   \implies 20log(k) \ \textless \ -20
+\end{equation}
+
+\begin{equation}
+    \implies k \ \textless \ 10^-^1
+\end{equation}
+
+\begin{equation}
+    \implies k_m_a_x = 0.1
+\end{equation}
+
+\therefore \ $k_o$ = 0.1
+
+\end{document}
