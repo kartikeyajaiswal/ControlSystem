@@ -1,18 +1,27 @@
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-1. The figure below shows the Bode magnitude and phase plots of a stable transfer function:
-\begin{equation}  
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+
+  The figure below shows the Bode magnitude and phase plots of a stable transfer function:
+    \begin{equation}  
             G(s) = \frac{n_0}{s^3 + d_2 s^2 + d_1 s + d}
-\end{equation}
+    \end{equation}
 \begin{figure}[h]
 
-    \includegraphics[width=1\linewidth, height=8cm]{./figs/q42_1.eps}
- 
+        \includegraphics[width=\columnwidth]{./figs/ee18btech11025/q42_1.eps}
+        \caption{}
+        \label{fig:ee18btech11025}
+  
 \end{figure}
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=1\linewidth, height=4cm ]{./figs/q42.eps}
-
+    
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11025/q42.eps}
+    \caption{}
+    \label{}
+  
 \end{figure}
+
  Consider the negative unity feedback configuration with gain $k$ in the feed forward path. The closed loop is stable for  . 
     The maximum value of $k_o$  is: \\
 
@@ -38,13 +47,13 @@ In terms of decibels:
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.02\linewidth, height=8cm]{./figs/1.eps}
-    Fig: nyquist plot of stable transfer function
+    \caption{nyquist plot of stable transfer function}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth, height=8.5cm]{./figs/2.eps} 
-\    Fig: nyquist plot of unstable transfer function
+    \caption{nyquist plot of unstable transfer function}
 \end{figure}
 
 \\
@@ -52,10 +61,12 @@ In terms of decibels:
 \\
 \\ G(s) is cascaded with k, so,
 
+
 \begin{equation}
         G_1(s) = kG(s) \\
 \end{equation}
 \begin{equation}
+    
         K_g = \frac{1}{|G_1(j\omega_p_c)|} \textgreater 1\\
 \end{equation}
 \begin{equation}
@@ -84,3 +95,4 @@ In terms of decibels:
 \therefore \ $k_o$ = 0.1
 
 \end{enumerate}
+
